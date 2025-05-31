@@ -4,13 +4,21 @@
 using namespace std;
 class LibreryItem
 {
-private:
+protected:
     std::string title;
     std::string author;
     int year;
     std::string id;
 public:
-    virtual void displayInfo() const;
+    LibreryItem(const std::string& t,const std::string& a,int y,const std::string& i)
+        : title(t),author(a),year(y),id(i) {}
+
+    virtual void displayInfo() const {
+        std::cout << "Title: " << title << "\n"
+                  << "Author: " << author << "\n"
+                  << "Year: " << year << "\n"
+                  << "ID: " << id << "\n";
+    }
     virtual ~LibreryItem();
 
 };
