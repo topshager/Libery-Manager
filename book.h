@@ -1,19 +1,20 @@
 #ifndef BOOK_H
 #define BOOK_H
+#include "library.h"
 #include <iostream>
 using namespace std;
-#include "library.h"
 
-class Book
+
+class Book : public LibreryItem
 {
 private:
-    int pagecount;
+    int pageCount;
 public:
     Book(const std::string& t,const std::string& a, int y ,const std::string& i,int pages)
-        : LibreryItem(t,a,y,i),pagecount(pages){}
+        : LibreryItem(t,a,y,i),pageCount(pages){}
     
     void displayInfo()const override{
-        LibreryItem::displayInfo():
+        LibreryItem::displayInfo();
         std::cout << "Pages: " << pageCount << "\n";
     }
 };
