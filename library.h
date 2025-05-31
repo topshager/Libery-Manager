@@ -19,26 +19,7 @@ public:
                   << "Year: " << year << "\n"
                   << "ID: " << id << "\n";
     }
-    virtual ~LibreryItem();
-
-};
- 
-
-
-class Book
-{
-private:
-    int pageCount;
-public:
-    displayInfo();
-};
-
-class Dvd
-{
-private:
-    int duration;
-    std::string genre;
-public:
+    virtual ~LibreryItem() {};
 
 };
 #endif
