@@ -1,25 +1,30 @@
-#ifndef LIBRARY_h
-#define LIBRARY_H
-#include <iostream>
-using namespace std;
-class LibreryItem
-{
-protected:
-    std::string title;
-    std::string author;
-    int year;
-    std::string id;
-public:
-    LibreryItem(const std::string& t,const std::string& a,int y,const std::string& i)
-        : title(t),author(a),year(y),id(i) {}
+class Media:
+    - string* title   (dynamically allocated)
+    - int rating
 
-    virtual void displayInfo() const {
-        std::cout << "Title: " << title << "\n"
-                  << "Author: " << author << "\n"
-                  << "Year: " << year << "\n"
-                  << "ID: " << id << "\n";
-    }
-    virtual ~LibreryItem() {};
+    + constructor(title_string, rating_int)
+    + copy constructor (deep copy)
+    + assignment operator (deep copy)
+    + virtual destructor
 
-};
-#endif
+    + virtual function display()
+    + operator<< overload
+
+class Book inherits Media:
+    - string* author   (dynamic)
+
+    + constructor(title, rating, author)
+    + copy constructor
+    + assignment operator
+    + destructor
+
+    + override display()
+    + operator<< overload
+
+
+class Movie inherits Media:
+    - int duration
+
+    + constructor(title, rating, duration)
+    + override display()
+    + operator<< overload
