@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring> 
 using  namespace std;
 
 
@@ -10,16 +11,31 @@ private:
 
 public:
 
-    Media(char *t, int rating){
-        title = new char[strlen(title)+1];
+    Media(const char *t, int r){
+        title = new char[strlen(t)+1];
         strcpy(title,t);
+        rating = r;
     }
     
-    + copy constructor (deep copy)
-    + assignment operator (deep copy)
-    + virtual destructor
+    Media(const Media& b){
+        title = new char[strlen(b.title)+1];
+        strcpy(title,b.title);
+        rating = b.rating;
+    }
 
-    + virtual function display()
-    + operator<< overload
+    Media& operator=(const Media& b){
+        if (this == &b) return *this;
+        delete[] title;
+        title = new char[strlen(b.title)+1];
+        strcpy(title,b.title);
+        rating = b.rating;
+        return *this;
+    }
+    ~Media(){
+        delete[] title;
+    }
 
-}
+    void show() {
+        std::cout << title << std::endl;
+    }
+};
