@@ -4,11 +4,17 @@ using  namespace std;
 
 
 class Media{
-public:
-    std::string  *title;
+private:
+    char  *title;
     int rating;
 
-    + constructor(title_string, rating_int)
+public:
+
+    Media(char *t, int rating){
+        title = new char[strlen(title)+1];
+        strcpy(title,t);
+    }
+    
     + copy constructor (deep copy)
     + assignment operator (deep copy)
     + virtual destructor
