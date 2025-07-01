@@ -11,15 +11,27 @@ private:
 public:
 
     Media(char *t, int rating){
-        title = new char[strlen(title)+1];
+        title = new char[strlen(t)+1];
         strcpy(title,t);
     }
     
-    + copy constructor (deep copy)
-    + assignment operator (deep copy)
-    + virtual destructor
+    Media(const Media& b){
+        title = new char[strlen(b.title)+1];
+        strcpy(title,b.title);
+    }
+    
+    Media& operator=(const Media& b){
+        if (this == &b) return *this;
+        delete[] title;
+        title = new char[strlen(b.title)+1];
+        strcpy(title,b.title);
+        return *this;
+    }
+    ~Media(){
+        delete[] title;
+    }
 
-    + virtual function display()
-    + operator<< overload
-
-}
+    void show() {
+        std::cout << title << std::endl;
+    }
+};
