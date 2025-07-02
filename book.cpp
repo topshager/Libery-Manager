@@ -18,6 +18,7 @@
     {
         author = new char[strlen(b.author)+1];
         ISB = new char[strlen(b.ISB)+1];
+        Copies = new int(*b.Copies);
         category =  new char[strlen(b.category)+1];
         strcpy(author,b.author);
         strcpy(ISB,b.ISB);
@@ -36,6 +37,9 @@
         
 
         author= new char[strlen(b.author)+1];
+        ISB = new char[strlen(b.ISB)+1];
+        Copies = new int(*b.Copies);
+        category =  new char[strlen(b.category)+1];
         strcpy(author,b.author);
         strcpy(ISB,b.ISB);
         strcpy(category ,b.category);
@@ -54,6 +58,6 @@
         Media::show();  
         std::cout << "Author: " << author << std::endl;
         std::cout << "ISB: " << ISB << std::endl;   
-        std::cout << "Copies: " << Copies << std::endl;
+        std::cout << "Copies: " << *Copies << std::endl;
         std::cout << "Category: " << category << std::endl;   
     }
