@@ -53,7 +53,7 @@
     void Book::show() {
         Media::show();  
         std::cout << "Author: " << author << std::endl;
-        std::cout << "Author: " << ISB << std::endl;   
-        std::cout << "Author: " << Copies << std::endl;
-        std::cout << "Author: " << category << std::endl;   
+        std::cout << "ISB: " << ISB << std::endl;   
+        std::cout << "Copies: " << Copies << std::endl;
+        std::cout << "Category: " << category << std::endl;   
     }
