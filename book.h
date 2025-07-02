@@ -1,3 +1,5 @@
+#ifndef BOOK_H_
+#define BO0K_H_
 #include <iostream>
 using  namespace std;
 #include "media.h";
@@ -40,3 +42,5 @@ public:
         std::cout << "Author: " << author << std::endl;
     }
 };
+
+#endif;
