@@ -20,6 +20,7 @@
         rating = b.rating;
         return *this;
     }
+    
    Media::~Media(){
         delete [] title;
     }

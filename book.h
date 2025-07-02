@@ -11,7 +11,7 @@ class Book : public Media
 private:
     char* author;
     char* ISB;
-    int* copies;
+    int* Copies;
     char* category;
 
 public:
