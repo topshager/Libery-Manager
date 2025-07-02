@@ -1,3 +1,6 @@
+#ifndef MEDIA_H_
+#define MEDIA_H_
+
 #include <iostream>
 #include <cstring> 
 using  namespace std;
@@ -39,3 +42,5 @@ public:
         std::cout << title << std::endl;
     }
 };
+
+#endif;
