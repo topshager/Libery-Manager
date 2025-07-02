@@ -32,7 +32,7 @@
         delete[]   author ;
         delete[]   ISB ;
         delete[]   Copies;
-        delete[]   category ;
+        delete[]   category;
         
 
         author= new char[strlen(b.author)+1];
@@ -45,9 +45,15 @@
 
     Book::~Book(){
         delete [] author;
+        delete [] ISB;
+        delete [] Copies;
+        delete [] category;
     }
 
     void Book::show() {
         Media::show();  
         std::cout << "Author: " << author << std::endl;
+        std::cout << "Author: " << ISB << std::endl;   
+        std::cout << "Author: " << Copies << std::endl;
+        std::cout << "Author: " << category << std::endl;   
     }
