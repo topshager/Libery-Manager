@@ -6,10 +6,11 @@ Edit or delete book information
 
 Track number of copies available and total copies
 
+
+
 Manage Users/Members
 
 Register new users (name, contact info, membership ID)
-
 
 Update or remove users
 
