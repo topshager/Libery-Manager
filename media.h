@@ -14,33 +14,13 @@ private:
 
 public:
 
-    Media(const char *t, int r){
-        title = new char[strlen(t)+1];
-        strcpy(title,t);
-        rating = r;
-    }
-    
-    Media(const Media& b){
-        title = new char[strlen(b.title)+1];
-        strcpy(title,b.title);
-        rating = b.rating;
-    }
+    Media(const char *t, int r);
+    Media(const Media& b);
 
-    Media& operator=(const Media& b){
-        if (this == &b) return *this;
-        delete[] title;
-        title = new char[strlen(b.title)+1];
-        strcpy(title,b.title);
-        rating = b.rating;
-        return *this;
-    }
-    ~Media(){
-        delete[] title;
-    }
+    Media& operator=(const Media& b);
+    ~Media();
 
-    void show() {
-        std::cout << title << std::endl;
-    }
+    void show();
 };
 
 #endif;
