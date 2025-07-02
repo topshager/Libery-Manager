@@ -6,11 +6,12 @@
     {
         author = new char[strlen(a)+1];
         ISB = new char[strlen(i)+1];
-        Copies = new int ;
+        Copies = new int(*c) ;
         category = new char[strlen(ctg)+1];
         
-
         strcpy(author,a);
+        strcpy(ISB,i);
+        strcpy(category,ctg);
     }
 
     Book::Book(const Book& b): Media(b)
