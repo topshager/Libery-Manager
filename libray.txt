@@ -1,0 +1,79 @@
+Manage Books
+
+Add new books (title, author, ISBN, copies, category)
+
+Edit or delete book information
+
+Track number of copies available and total copies
+
+Manage Users/Members
+
+Register new users (name, contact info, membership ID)
+
+
+Update or remove users
+
+Track user borrowing history and status
+
+Issue and Return Books
+
+Allow users to borrow books (check availability first)
+
+Track due dates and borrowed book details
+
+Accept book returns and update inventory
+
+Handle overdue books and fines (optional)
+
+
+
+Search and Browse
+
+Search for books by title, author, category, or ISBN
+
+Filter and sort books (e.g., by availability, popularity)
+
+
+Notifications and Reminders (optional)
+
+Notify users of due dates, overdue books, or reservations
+
+Send alerts for reserved books available for pickup
+
+Reports and Statistics
+
+Track most borrowed books
+
+Generate reports on library usage
+
+Monitor overdue books and outstanding fines
+
+
+User Interface
+
+Easy-to-use interface for librarians and members
+
+Secure login/authentication (for staff and users)
+
+Example Workflow:
+Librarian adds new books and registers users.
+
+Users search and borrow books.
+
+System updates inventory and tracks due dates.
+
+Users return books; system updates status.
+
+Librarian reviews reports and manages overdue fines.
+
+
+Optional Advanced Features:
+Digital library integration (eBooks, audiobooks)
+
+Barcode or RFID scanning for faster transactions
+
+Reservation/waitlist system for popular books
+
+Multi-branch library support
+
+Mobile app or web interface
