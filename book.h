@@ -10,7 +10,7 @@ class Book : public Media
 {
 private:
     char* author;
-    char* ISBN;
+    char* ISB;
     int* copies;
     char* category;
 

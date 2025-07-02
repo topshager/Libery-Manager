@@ -2,9 +2,14 @@
 #include <iostream>
 #include <cstring>
 
-    Book::Book(const char*  t,int r,const char* a ): Media(t,r)
+    Book::Book(const char*  t,int r,const char* a ,char *i,int* c,char* ctg): Media(t,r)
     {
         author = new char[strlen(a)+1];
+        ISB = new char[strlen(i)+1];
+        Copies = new int ;
+        category = new char[strlen(ctg)+1];
+        
+
         strcpy(author,a);
     }
 
