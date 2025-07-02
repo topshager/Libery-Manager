@@ -1,9 +1,9 @@
 #ifndef BOOK_H_
-#define BO0K_H_
+#define BOOK_H_
 
 #include <iostream>
 using  namespace std;
-#include "media.h";
+#include "media.h"
 #include <cstring>
 
 class Book : public Media
@@ -12,7 +12,7 @@ private:
     char* author;
 
 public:
-    Book(const char* t,int r,const char* a ): Media(t,r)
+    Book(const char*  t,int r,const char* a ): Media(t,r)
     {
         author = new char[strlen(a)+1];
         strcpy(author,a);
