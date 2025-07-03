@@ -1,5 +1,5 @@
 #include "media.h";
-
+using namespace std;
     Media::Media(const char *t, int r){
         title = new char[strlen(t)+1];
         strcpy(title,t);

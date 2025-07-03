@@ -1,6 +1,7 @@
 #include "book.h";
 #include <iostream>
 #include <cstring>
+using namespace std;
 
     Book::Book(const char*  t,int r,const char* a ,char *i,int* c,char* ctg): Media(t,r)
     {
