@@ -17,7 +17,6 @@ private:
 public:
     Book(const char*  t,int r,const char* a,char *i,int* c,char* ctg );
     Book(const Book& b);
-    void add(Book* b);
     Book& operator=(const Book& b);
     ~Book();
     void show();

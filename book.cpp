@@ -54,6 +54,8 @@
         delete [] category;
     }
 
+
+
     void Book::show() {
         Media::show();  
         std::cout << "Author: " << author << std::endl;
