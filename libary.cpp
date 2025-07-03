@@ -1,6 +1,6 @@
 #include "library.h";
 
-int addBook(int a,int b ){
+int addBook(const char*  t,int r,const char* a,char *i,int* c,char* ctg ){
     return a + b;
 }
 
