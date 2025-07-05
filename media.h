@@ -19,7 +19,7 @@ public:
 
     Media& operator=(const Media& b);
     ~Media();
-
+    Media();
     void show();
 };
 

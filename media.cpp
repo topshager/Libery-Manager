@@ -24,6 +24,10 @@ using namespace std;
    Media::~Media(){
         delete [] title;
     }
+    Media::Media(){
+        title = "";
+        rating = 0;
+    }
 
     void Media::show() {
         Media::show();
