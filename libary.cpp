@@ -3,9 +3,26 @@
 #include <iostream>
 using namespace std;
 
-Libary::addBook(const char*  t,int r,const char* a,char *i,int* c,char* ctg) : Book(t,r,,a,i,c,ctg)
+void Libary::addBook()
 {
-    title = new char*[strlen(t)+1];
+    char* title = new char[100];
+    cout <<"Enter the book title" << endl;
+    cin.getline(title,100);
+    int* rating = new int;
+    cout << "Enter the book rating"<< endl;
+    cin >> *rating;
+    char* author = new char[100];
+    cout << "Enter author name" << endl;
+    cin.getline(author,100);
+    char* isb = new char[100];
+    cout << "Enter book ISB number" << endl;
+    cin.getline(isb,100);
+    int* copies = new int;
+    char* category = new char[100];
+    cout <<"please choose a categroy";
+    
+
+    
 
 
 
