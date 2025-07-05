@@ -21,29 +21,33 @@ void printCategory(Category c){
 }
 void Libary::addBook()
 {
-    char* title = new char[100];
-    cout <<"Enter the book title" << endl;
-    cin.getline(title,100);
-    int* rating = new int;
-    cout << "Enter the book rating"<< endl;
-    cin >> *rating;
-    char* author = new char[100];
-    cout << "Enter author name" << endl;
-    cin.getline(author,100);
-    char* isb = new char[100];
-    cout << "Enter book ISB number" << endl;
-    cin.getline(isb,100);
-    int* copies = new int;
-    char* category = new char[100];
-    cout <<"please choose a categroy";
+    char t;
+    int r;
+    char a;
+    char i;
+    int c;
+    char ctg;
+    cout << "Enter title: ";
+    cin>> t;
 
+    cout << "Enter author: ";
+    cin>>a;
 
+    cout << "Enter ISBN: ";
+    cin>>i;
 
-    
+    cout << "Enter rating: ";
+    cin >> r;
+    cin.ignore();
 
+    cout << "Enter number of copies: ";
+    cin >> c;
+    cin.ignore();
 
-
-
+    cout << "Choose category (0=Fiction, 1=Nonfiction, etc.): ";
+    cin >> ctg;
+    cin.ignore();
+    Book myBook(const char*  t,int r,const char* a,char *i,int* c,char* ctg );
 }
 
 int subtractBook(int a, int b){
