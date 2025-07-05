@@ -16,11 +16,12 @@ public:
 
     Media(const char *t, int r);
     Media(const Media& b);
-
+    const char* getTitle() const;
+    int getRating() const;
     Media& operator=(const Media& b);
     ~Media();
     Media();
-    void show();
+    void show() const;
 };
 
 #endif;
