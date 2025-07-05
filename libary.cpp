@@ -2,7 +2,23 @@
 #include "book.h";
 #include <iostream>
 using namespace std;
+enum Category {
+    FICTION,
+    NONFICTION,
+    SCIENCE,
+    HISTORY,
+    TECHNOLOGY
+};
 
+void printCategory(Category c){
+    switch(c){
+        case FICTION:cout <<"Fiction";break;
+        case NONFICTION: cout <<"None-fiction";break;
+        case SCIENCE: cout << "Science"; break;
+        case HISTORY: cout <<"History";break;
+        case TECHNOLOGY: cout << "Technology";break;
+    }
+}
 void Libary::addBook()
 {
     char* title = new char[100];
@@ -20,7 +36,8 @@ void Libary::addBook()
     int* copies = new int;
     char* category = new char[100];
     cout <<"please choose a categroy";
-    
+
+
 
     
 
