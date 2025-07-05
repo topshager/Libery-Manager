@@ -3,7 +3,7 @@
 #include <cstring>
 using namespace std;
 
-    Book::Book(const char*  t,int r,const char* a ,char *i,int* c,char* ctg): Media(t,r)
+    Book::Book(const char*  t,int r,const char* a ,char *i,int* c,char ctg): Media(t,r)
     {
         author = new char[strlen(a)+1];
         ISB = new char[strlen(i)+1];
@@ -63,4 +63,11 @@ using namespace std;
         std::cout << "ISB: " << ISB << std::endl;   
         std::cout << "Copies: " << *Copies << std::endl;
         std::cout << "Category: " << category << std::endl;   
+    }
+
+    Book::Book(){
+        author = "";
+        ISB = "";
+        Copies = 0;
+        category;
     }
