@@ -28,7 +28,15 @@ using namespace std;
         title = "";
         rating = 0;
     }
+    const char*  Media::getTitle() const{
+        return title;
+    }
+    int  Media::getRating() const{
+        return rating;
+    }
+    
 
-    void Media::show() {
-        Media::show();
+    void Media::show() const {
+      cout <<"SHowing"<<endl;
+
     }
