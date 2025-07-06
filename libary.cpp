@@ -40,7 +40,7 @@ void Libary::addBook()
     cin >> r;
     cin.ignore();
 
-    cout << "Enter number of copies: ";
+    cout << "Enter number 3 of copies: ";
     cin >> c;
     cin.ignore();
 
